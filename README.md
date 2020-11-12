@@ -1,4 +1,4 @@
-# bs
+# Battleship Api
 A Battleship Api for single player mode
 
 ## Notes
