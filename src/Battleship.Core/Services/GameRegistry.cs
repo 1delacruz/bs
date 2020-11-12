@@ -59,5 +59,13 @@ namespace Battleship.Core.Services
         {
             return _games.Keys;
         }
+
+        /// <summary>
+        /// Deletes all the registered games.
+        /// </summary>
+        public void Clear()
+        {
+            _games.Clear();
+        }
     }
 }

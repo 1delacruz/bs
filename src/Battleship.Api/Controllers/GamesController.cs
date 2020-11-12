@@ -114,5 +114,18 @@ namespace Battleship.Api.Controllers
 
             return Ok(game);
         }
+
+        /// <summary>
+        /// Deletes all the registered games.
+        /// </summary>
+        /// <returns></returns>
+        [HttpDelete]
+        [Route("")]
+        public IActionResult DeleteAll()
+        {
+            _gameRegistry.Clear();
+
+            return NoContent();
+        }
     }
 }

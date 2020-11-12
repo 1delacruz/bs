@@ -30,5 +30,10 @@ namespace Battleship.Core.Services
         /// </summary>
         /// <returns></returns>
         IEnumerable<Guid> GetGameIds();
+
+        /// <summary>
+        /// Deletes all the registered games.
+        /// </summary>
+        void Clear();
     }
 }
