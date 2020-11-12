@@ -20,15 +20,23 @@ namespace Battleship.Api.Controllers
             _gameRegistry = gameRegistry;
         }
 
+        /// <summary>
+        /// Gets the list of game id.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("")]
-        public IActionResult GetGames()
+        public IActionResult GetGamesIds()
         {
             var gameIds = _gameRegistry.GetGameIds();
 
             return Ok(gameIds);
         }
 
+        /// <summary>
+        /// Creates and starts a new game.
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("")]
         public IActionResult NewGame()
@@ -45,6 +53,12 @@ namespace Battleship.Api.Controllers
             return Ok(game.Id);
         }
 
+        /// <summary>
+        /// Processes an attack.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("{id}/attack")]
         public IActionResult Attack([FromRoute, Required] Guid id, [Required] AttackRequest request)
@@ -68,6 +82,11 @@ namespace Battleship.Api.Controllers
             return Ok(attackResult);
         }
 
+        /// <summary>
+        /// Deletes a game.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         [Route("{id}")]
         public IActionResult DeleteGame([FromRoute, Required] Guid id)
@@ -77,6 +96,11 @@ namespace Battleship.Api.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// For debugging purposes only.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("{id}/debug")]
         public IActionResult Debug([FromRoute, Required] Guid id)

@@ -134,8 +134,18 @@ namespace Battleship.Core.DomainObjects
             }
         }
 
+        /// <summary>
+        /// Gets the list of players.
+        /// </summary>
+        /// <returns></returns>
         protected abstract IEnumerable<Player> GetPlayers();
 
+        /// <summary>
+        /// Checks whether there is a collision of coordinates.
+        /// </summary>
+        /// <param name="playerShips"></param>
+        /// <param name="proposedCoordinates"></param>
+        /// <returns></returns>
         private bool HasCollision(IEnumerable<Ship> playerShips, IEnumerable<Coordinate> proposedCoordinates)
         {
             var hasCollission = proposedCoordinates.Any(pc => playerShips.Any(s => s.Coordinates.Any(c => c.Equals(pc))));
