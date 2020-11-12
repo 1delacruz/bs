@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{75B7878A-5B23-4474-B8C6-D5A6EB60AE18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A07B017B-9D3A-42E1-ABE6-16E5CC8C1BCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Battleship.Api", "src\Battleship.Api\Battleship.Api.csproj", "{552EE2B7-CF0F-4A3A-A68F-CE9BD74DD857}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Battleship.Core", "src\Battleship.Core\Battleship.Core.csproj", "{99B9F1ED-8F91-4CA1-8744-772F47630E27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Battleship.Core.UnitTests", "tests\Battleship.Core.UnitTests\Battleship.Core.UnitTests.csproj", "{3BE6D98D-53D7-4BEF-A363-2637F94597BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Battleship.Api.UnitTests", "tests\Battleship.Api.UnitTests\Battleship.Api.UnitTests.csproj", "{4B779CAB-7630-4125-A193-AE48723B3F59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFA24BD6-3F63-4061-87A2-C9D39954BB8C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		battleship.postman_collection.json = battleship.postman_collection.json
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{552EE2B7-CF0F-4A3A-A68F-CE9BD74DD857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552EE2B7-CF0F-4A3A-A68F-CE9BD74DD857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552EE2B7-CF0F-4A3A-A68F-CE9BD74DD857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552EE2B7-CF0F-4A3A-A68F-CE9BD74DD857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B9F1ED-8F91-4CA1-8744-772F47630E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B9F1ED-8F91-4CA1-8744-772F47630E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B9F1ED-8F91-4CA1-8744-772F47630E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B9F1ED-8F91-4CA1-8744-772F47630E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE6D98D-53D7-4BEF-A363-2637F94597BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE6D98D-53D7-4BEF-A363-2637F94597BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE6D98D-53D7-4BEF-A363-2637F94597BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE6D98D-53D7-4BEF-A363-2637F94597BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B779CAB-7630-4125-A193-AE48723B3F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B779CAB-7630-4125-A193-AE48723B3F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B779CAB-7630-4125-A193-AE48723B3F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B779CAB-7630-4125-A193-AE48723B3F59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{552EE2B7-CF0F-4A3A-A68F-CE9BD74DD857} = {75B7878A-5B23-4474-B8C6-D5A6EB60AE18}
+		{99B9F1ED-8F91-4CA1-8744-772F47630E27} = {75B7878A-5B23-4474-B8C6-D5A6EB60AE18}
+		{3BE6D98D-53D7-4BEF-A363-2637F94597BD} = {A07B017B-9D3A-42E1-ABE6-16E5CC8C1BCF}
+		{4B779CAB-7630-4125-A193-AE48723B3F59} = {A07B017B-9D3A-42E1-ABE6-16E5CC8C1BCF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {673915F8-E581-4936-BC07-5D360B3BAD84}
+	EndGlobalSection
+EndGlobal
