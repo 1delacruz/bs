@@ -23,12 +23,13 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:44386/games",
+					"raw": "https://bs20201112.azurewebsites.net/games",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"bs20201112",
+						"azurewebsites",
+						"net"
 					],
-					"port": "44386",
 					"path": [
 						"games"
 					]
@@ -55,7 +56,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"xCoordinate\": 8,\r\n    \"yCoordinate\": 3\r\n}",
+					"raw": "{\r\n    \"xCoordinate\": 5,\r\n    \"yCoordinate\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -63,12 +64,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44386/games/{{gameId}}/attack?",
+					"raw": "https://bs20201112.azurewebsites.net/games/{{gameId}}/attack?",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"bs20201112",
+						"azurewebsites",
+						"net"
 					],
-					"port": "44386",
 					"path": [
 						"games",
 						"{{gameId}}",
@@ -111,12 +113,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44386/games/{{gameId}}",
+					"raw": "https://bs20201112.azurewebsites.net/games/{{gameId}}",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"bs20201112",
+						"azurewebsites",
+						"net"
 					],
-					"port": "44386",
 					"path": [
 						"games",
 						"{{gameId}}"
@@ -155,12 +158,13 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44386/games/{{gameId}}/debug",
+					"raw": "https://bs20201112.azurewebsites.net/games/{{gameId}}/debug",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"bs20201112",
+						"azurewebsites",
+						"net"
 					],
-					"port": "44386",
 					"path": [
 						"games",
 						"{{gameId}}",
@@ -200,12 +204,54 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44386/games",
+					"raw": "https://bs20201112.azurewebsites.net/games",
 					"protocol": "https",
 					"host": [
-						"localhost"
+						"bs20201112",
+						"azurewebsites",
+						"net"
 					],
-					"port": "44386",
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all games",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d41722c4-5d38-4b8e-b5e2-5a0b32c6199c",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://bs20201112.azurewebsites.net/games",
+					"protocol": "https",
+					"host": [
+						"bs20201112",
+						"azurewebsites",
+						"net"
+					],
 					"path": [
 						"games"
 					]
@@ -238,9 +284,9 @@
 	],
 	"variable": [
 		{
-			"id": "c68991dd-23bb-4d07-85b4-816806ff2752",
+			"id": "8047ffc4-af6e-44f5-a947-bfc04094bfe0",
 			"key": "gameId",
-			"value": "a8fd8b44-387b-4c19-a53e-aa7fa6dd2d77"
+			"value": "ca70c9fa-f3c7-4a4a-8449-86e37e310fea"
 		}
 	],
 	"protocolProfileBehavior": {}
