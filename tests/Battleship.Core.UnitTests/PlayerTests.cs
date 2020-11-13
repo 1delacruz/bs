@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Battleship.Core.DomainObjects;
 using Battleship.Core.DomainObjects.Ships;
+using FluentAssertions;
 using Xunit;
 
 namespace Battleship.Core.UnitTests
@@ -32,7 +33,7 @@ namespace Battleship.Core.UnitTests
         {
             for (int i = 0; i < _mockCoordinates.Count; i++)
             {
-                Assert.Equal(_mockCoordinates[i], _player.Ships[0].Coordinates[i]);
+                _player.Ships[0].Coordinates[i].Should().Be(_mockCoordinates[i]);
             }
         }
 
@@ -44,7 +45,7 @@ namespace Battleship.Core.UnitTests
         {
             var actualAttackResult = _player.ProcessAttack(x, y);
 
-            Assert.Equal(expectedAttackResult, actualAttackResult);
+            actualAttackResult.Should().Be(expectedAttackResult);
         }
     }
 }
